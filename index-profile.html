@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav" class="sticky-nav">
+      <div class="logo">Kesh<span>av.</span></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <!-- <li><a href="./Spotify_clone/index-spotify.html">Mini-Projects</a></li> -->
+          <li><a href="./Spotify_clone/index-spotify.html">Mini-Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kesh<span>av.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+          <li><a href="#location" onclick="toggleMenu()">Location</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+          <li><a href="./Spotify_clone/index-spotify.html" onclick="toggleMenu()">Mini-Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- hero-section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="assets/profile-eren.jpg"
+          alt="Keshav profile picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Keshav</h1>
+        <p class="section__text__p2">
+          Welcome to my <span class="color">Profile.</span>
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/KResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contacts'">
+            Contact
+          </button>
+        </div>
+        <div id="social-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My linkedin profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+            title="Linkedin"
+          />
+          <img
+            src="assets/github.png"
+            alt="My github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+            title="Github"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="assets/WhatsApp Image 2023-08-31 at 10.01.38 PM.jpeg" class="about-pic" alt="Profile pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img
+                src="assets/education.png"
+                alt="Education icon"
+                class="icon-ani"
+              />
+              <h3>Education</h3>
+              <p>SSLC <br />PUC</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              "I'm a curious soul with a love for coding and creativity. Whether
+              I'm immersed in lines of code or lost in a world of colors and
+              brushes, I'm always seeking to create something that brings joy
+              and meaning to life. From pixels to programming, I believe in the
+              power of turning ideas into reality."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hobbies and Videos section -->
+    <section id="hobbies">
+      <h1 class="title">Hobbies</h1>
+      <div class="hobbies-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h2 class="hobbies-sub-title">Video and Audio</h2>
+            <div class="article-container">
+              <video controls class="video" src="./assets/Erwin Smith's Final Speech - My Soldiers.mp4"></video>
+            </div>
+            <h2 class="hobbies-sub-title audio-title">Audio</h2>
+            <div class="audio">
+              <audio controls>
+              <source src="./assets/Daylight-audio.mp3 " type="audio/mpeg">
+            </audio>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="hobbies-sub-title">Hobbies</h2>
+            <div class="article-container">
+              <div class="hobbies-container">
+                <ul>
+                  <li class="list"><img class="text icon-ani" src="./assets/open-book.png" alt=""><p><b>Reading:</b> Whether it's fiction, non-fiction, or graphic novels, reading is a wonderful way to explore new worlds, gain knowledge, and unwind.</p> </li>
+                  <li class="list"><img class="text icon-ani" src="./assets/cricket.png" alt=""><p><b>Sports:</b> Playing sports like cricket, basketball, tennis can keep you physically active and provide a sense of camaraderie.</p> </li>
+                  <li class="list"><img class="text icon-ani" src="./assets/games.png" alt=""><p><b>Gaming:</b> Engaging in video games or board games can provide entertainment, challenge your strategic thinking, and allow for immersive storytelling experiences.</p> </li>
+                  <li class="list"><img class="text icon-ani" src="./assets/musical-note.png" alt=""><p><b>Listening to Music:</b> Simply listening to music can be a hobby in itself. Explore different genres, artists, and albums to expand your musical tastes.</p> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Geo location section -->
+    <section id="location">
+      <div class="container location">
+        <h1 class="title loc">Location</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.4010126658472!2d79.06432007448838!3d30.735235385513548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39083ee08aa6b0b5%3A0xdbbdae8b9602ee02!2sKedarnath%20Temple!5e0!3m2!1sen!2sin!4v1692979003394!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contacts">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/emial.svg"
+            alt="Email icon"
+            class="contact-icon icon-ani"
+          />
+          <p><a href="mailto:dolly.030.2002@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/insta.svg"
+            alt="instagram icon"
+            class="contact-icon icon-ani"
+          />
+          <p><a href="https://instagram.com/_keshav_official_444?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Footer section -->
+    <footer>
+      <div class="social-links">
+        <a href="https://facebook.com" title="Facebook"><img src="./assets/bxl-facebook-square.svg" alt="facebook icon" class="icon social-links-img"></a>
+        <a href="https://instagram.com/_keshav_official_444?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" title="Instagram"><img src="./assets/insta.svg" alt="instagram icon" class="icon social-links-img"></a>
+        <a href="mailto:dolly.030.2002@gmail.com" title="Email"><img src="./assets/emial.svg" alt="email icon" class="icon social-links-img"></a>
+      </div>
+      <p>Copyright &#169; 2023 Keshav. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </body>
+</html>
